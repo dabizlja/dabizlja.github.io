@@ -549,6 +549,10 @@ strong {
     flex-shrink: 0;
 }
 
+.about-list li span {
+    flex: 1;
+}
+
 .about-list li strong {
     color: var(--text-primary);
 }
