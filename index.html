@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Dabizljevic | Senior Software Engineer</title>
+    <meta name="description" content="Portfolio of Stefan Dabizljevic, Senior Software Engineer with 10+ years building production web applications. Specializing in Ruby on Rails, React, and scalable API architecture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Phosphor Icons for modern iconography -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="dark-theme">
+    <div class="background-elements">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <header class="navbar glass-panel">
+        <div class="container nav-content">
+            <a href="#" class="logo">SD<span class="dot">.</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+            </nav>
+            <a href="https://www.linkedin.com/in/stefan-dabizljevic-49739988" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Let's Connect</a>
+            <button class="mobile-menu-toggle">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text fade-in-up">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1 class="name">Stefan<br><span class="gradient-text">Dabizljevic</span></h1>
+                    <h2 class="role typing-text">Senior Software Engineer</h2>
+                    <p class="hero-desc">
+                        10+ years shipping production software used by millions—from SaaS startups to global enterprises. Specializing in Ruby on Rails, scalable API design, and engineering teams that actually deliver.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#experience" class="btn btn-primary">View My Journey</a>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/stefan-dabizljevic-49739988" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="ph ph-linkedin-logo"></i></a>
+                            <!-- Placeholder for GitHub/Twitter if needed, commenting out for now -->
+                            <!-- <a href="#" aria-label="GitHub" class="social-icon"><i class="ph ph-github-logo"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive 3D/Visual element space -->
+                <div class="hero-visual fade-in-up delay-1">
+                    <div class="glass-card profile-card">
+                        <div class="profile-image-placeholder">
+                            <img src="stef.jpeg" alt="Stefan Dabizljevic" class="profile-photo">
+                        </div>
+                        <div class="tech-stack-ticker">
+                            <span class="ticker-item"><i class="ph-fill ph-train"></i> Ruby on Rails</span>
+                            <span class="ticker-item"><i class="ph-fill ph-atom"></i> React / Hotwire</span>
+                            <span class="ticker-item"><i class="ph-fill ph-database"></i> PostgreSQL</span>
+                            <span class="ticker-item"><i class="ph-fill ph-cube"></i> Docker</span>
+                            <span class="ticker-item"><i class="ph-fill ph-check-circle"></i> RSpec</span>
+                            <!-- Duplicated for seamless loop -->
+                            <span class="ticker-item"><i class="ph-fill ph-train"></i> Ruby on Rails</span>
+                            <span class="ticker-item"><i class="ph-fill ph-atom"></i> React / Hotwire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-content grid-2 fade-in-up delay-1">
+                    <div class="about-text glass-panel p-lg">
+                        <p>I'm a Senior Software Engineer with over 10 years of hands-on experience building production web applications across Europe and the United States—from early-stage startups to global enterprises.</p>
+                        <ul class="about-list">
+                            <li><i class="ph-fill ph-train"></i> <strong>Ruby on Rails specialist</strong> — shipped clean, scalable systems from HR platforms processing 100k+ resumes/day to social media APIs serving 10 million users worldwide.</li>
+                            <li><i class="ph-fill ph-users-three"></i> <strong>Team leader & mentor</strong> — led engineering squads, worked directly with CTOs and founders, and helped junior developers grow into confident senior engineers.</li>
+                            <li><i class="ph-fill ph-chart-line-up"></i> <strong>Performance & quality driven</strong> — pushed test coverage to 90%+ with RSpec, optimized SQL queries, and introduced CI/CD pipelines that made shipping feel effortless.</li>
+                            <li><i class="ph-fill ph-robot"></i> <strong>Exploring AI</strong> — actively building with modern AI tools and LLM-powered workflows, integrating AI capabilities into real-world applications and staying at the forefront of how the technology is reshaping how we build software.</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats grid-2 gap-sm">
+                        <div class="stat-card glass-panel flex-center flex-col">
+                            <i class="ph-duotone ph-code stat-icon"></i>
+                            <span class="stat-value">10+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-card glass-panel flex-center flex-col">
+                            <i class="ph-duotone ph-users-three stat-icon"></i>
+                            <span class="stat-value">10M+</span>
+                            <span class="stat-label">Users Served</span>
+                        </div>
+                        <div class="stat-card glass-panel flex-center flex-col">
+                            <i class="ph-duotone ph-globe stat-icon"></i>
+                            <span class="stat-value">6+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                        <div class="stat-card glass-panel flex-center flex-col">
+                            <i class="ph-duotone ph-train stat-icon"></i>
+                            <span class="stat-value">Rails</span>
+                            <span class="stat-label">Core Specialty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="timeline fade-in-up delay-1">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Jun 2024 – Present · Florida, US (Remote)</span>
+                            <h3 class="timeline-role">Senior Software Engineer</h3>
+                            <h4 class="timeline-company">Trump Media & Technology Group</h4>
+                            <p class="timeline-desc">Engineering on a social media platform with over 10 million users worldwide. Building and maintaining APIs that power both the mobile apps and web applications, while developing internal tooling for admin management, monitoring, and operational visibility at scale.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">API Development</span>
+                                <span class="tag">Scale</span>
+                                <span class="tag">Internal Tools</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Nov 2023 – Jun 2024 · Massachusetts, US (Remote)</span>
+                            <h3 class="timeline-role">Senior Software Engineer</h3>
+                            <h4 class="timeline-company">Space for Arts</h4>
+                            <p class="timeline-desc">Led a team of 4 engineers building an online marketplace connecting busy professionals with unique venue spaces. Spearheaded a full Rails version upgrade and a significant frontend migration from React to Hotwire and Stimulus—improving performance and UX. Introduced GitHub Actions for CI/CD, Linear for agile project management, and collaborated directly with the CTO and founders on product roadmap and strategic decisions.</p>
+                            <div class="tag-group">
+                                <span class="tag">Team Lead</span>
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">Hotwire</span>
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">Agile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Feb 2022 – Nov 2023 · Berlin, Germany</span>
+                            <h3 class="timeline-role">Senior Software Engineer</h3>
+                            <h4 class="timeline-company">Hive</h4>
+                            <p class="timeline-desc">Core contributor on a Warehouse Management System (WMS) for a Berlin-based logistics startup that raised over €30M. Built the entire freight module from the ground up, integrated Shopify and WooCommerce APIs, and drove performance gains through SQL query optimization and API-level caching. Pushed test coverage to 90% with RSpec and delivered analytics APIs and merchant-facing dashboards that gave clients real-time insight into their operations.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">RSpec</span>
+                                <span class="tag">Shopify API</span>
+                                <span class="tag">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Sep 2021 – Feb 2022 · Madrid, Spain</span>
+                            <h3 class="timeline-role">Senior Software Engineer</h3>
+                            <h4 class="timeline-company">CoverWallet, an Aon Company</h4>
+                            <p class="timeline-desc">Developed an online business insurance platform with a strong focus on third-party API integrations. Led the technical expansion into South American markets, successfully delivering 10+ insurance provider integrations and raising the overall test coverage across the codebase to ensure reliability at scale.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">API Integration</span>
+                                <span class="tag">Insurtech</span>
+                                <span class="tag">Testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Dec 2017 – Apr 2021 · London, UK (Hybrid)</span>
+                            <h3 class="timeline-role">Senior Software Engineer</h3>
+                            <h4 class="timeline-company">The Access Group</h4>
+                            <p class="timeline-desc">Key engineer on an HR platform managing end-to-end candidate recruitment. Integrated with the Indeed API to process over 100,000 resumes per day—a technically demanding integration requiring robust error handling and scalability. Built a white-label customization feature enabling clients to tailor their experience independently, and designed a custom in-house deployment system for UK-hosted servers. Mentored multiple junior developers, several of whom progressed into senior engineering roles.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">Indeed API</span>
+                                <span class="tag">Scalability</span>
+                                <span class="tag">Mentorship</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">May 2020 – Sep 2021 · Remote (Bali, Indonesia)</span>
+                            <h3 class="timeline-role">Senior Software Engineer</h3>
+                            <h4 class="timeline-company">4Create</h4>
+                            <p class="timeline-desc">Collaborated remotely with an international team on clinical trial management software for Bioclinica. Introduced a new versioning system using Trailblazer to track application changes effectively. Worked full-stack across a Rails backend and React frontend, and had the unique opportunity to collaborate directly with Trailblazer's co-founder Nick on refactoring and performance improvements.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">Trailblazer</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Healthcare</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Aug 2016 – Nov 2017 · Belgrade, Serbia</span>
+                            <h3 class="timeline-role">Software Engineer</h3>
+                            <h4 class="timeline-company">TNation</h4>
+                            <p class="timeline-desc">Full-stack contributor on a platform for generating targeted online campaigns, built with Ruby on Rails, Backbone.js, and PostgreSQL. Dockerized the application and deployed it to Heroku, then led the architectural initiative to break the monolith into microservices using RabbitMQ for inter-service communication—improving scalability and long-term maintainability.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby on Rails</span>
+                                <span class="tag">Backbone.js</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Microservices</span>
+                                <span class="tag">RabbitMQ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Jan 2015 – Jul 2016 · Serbia</span>
+                            <h3 class="timeline-role">Junior Software Engineer</h3>
+                            <h4 class="timeline-company">BLGRD</h4>
+                            <p class="timeline-desc">Started my professional journey building an internal newsletter tool for Lomography that streamlined content production and drove brand engagement across a global community—resulting in 150+ newsletters reaching audiences worldwide. Re-coded the Lomography website using the Middleman framework, significantly reducing code duplication. Also delivered e-commerce solutions on Shopify and WooCommerce for clients across Austria and Europe, including a full Shopify store built from scratch.</p>
+                            <div class="tag-group">
+                                <span class="tag">Ruby</span>
+                                <span class="tag">Middleman</span>
+                                <span class="tag">Shopify</span>
+                                <span class="tag">WooCommerce</span>
+                                <span class="tag">E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Core Competencies</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="skills-grid fade-in-up delay-1">
+
+                    <div class="skill-category glass-panel">
+                        <h3 class="skill-header"><i class="ph-duotone ph-brackets-curly"></i> Technical Stack</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span class="skill-name">Ruby on Rails</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 97%"></div></div>
+                            </li>
+                            <li>
+                                <span class="skill-name">JavaScript (React / Hotwire)</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                            </li>
+                            <li>
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Docker / DevOps</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 83%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <h3 class="skill-header"><i class="ph-duotone ph-users-four"></i> Engineering & Leadership</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span class="skill-name">API Design & Integration</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 97%"></div></div>
+                            </li>
+                            <li>
+                                <span class="skill-name">RSpec / Test Coverage</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+                            </li>
+                            <li>
+                                <span class="skill-name">Team Leadership & Mentoring</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                            </li>
+                            <li>
+                                <span class="skill-name">CI/CD & Deployment</span>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 87%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">SD<span class="dot">.</span></div>
+            <p class="footer-copyright">&copy; <span id="year"></span> Stefan Dabizljevic. Built with modern web technologies.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/stefan-dabizljevic-49739988" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
