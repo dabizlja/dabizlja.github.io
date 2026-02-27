@@ -432,6 +432,43 @@ strong {
     color: var(--text-secondary);
 }
 
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.contact-link i {
+    color: var(--accent-secondary);
+    font-size: 1rem;
+}
+
+.contact-link:hover {
+    color: var(--text-primary);
+}
+
+.footer-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.footer-contact-link:hover {
+    color: var(--accent-primary);
+}
+
 .social-icon:hover {
     background: var(--gradient-brand);
     color: white;
