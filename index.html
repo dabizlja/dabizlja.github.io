@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForestAura — A Hidden Retreat in Lipovica Forest</title>
+    <meta name="description" content="ForestAura is a private holiday retreat nestled in Lipovica forest, Belgrade. A peaceful escape with spa center, pool, kids playground, and direct access to nature.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+    <a href="#home" aria-label="Back to top">
+        <img src="forest-aura-logo.jpg" alt="ForestAura" class="nav-logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="#story"     data-i18n="nav.story">Story</a></li>
+        <li><a href="#amenities" data-i18n="nav.amenities">Amenities</a></li>
+        <li><a href="#gallery"   data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#contact"   data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+        <div class="lang-toggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-sep">·</span>
+            <button class="lang-btn" data-lang="sr">SR</button>
+        </div>
+        <a href="#contact" class="nav-cta" data-i18n="nav.book">Book a Stay</a>
+    </div>
+</nav>
+
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+    <div class="hero-bg" id="heroBg">
+        <!--
+            TO USE YOUR OWN PHOTO:
+            Replace the gradient in CSS (.hero-bg) with:
+            background-image: linear-gradient(...), url('hero.jpg');
+        -->
+    </div>
+
+    <div class="hero-content">
+        <img src="forest-aura-logo.jpg" alt="ForestAura" class="hero-logo">
+        <p class="hero-tagline" data-i18n="hero.tagline">Where the forest breathes</p>
+        <p class="hero-location" data-i18n="hero.location">Lipovica Forest &nbsp;·&nbsp; Belgrade</p>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+        <div class="scroll-line"></div>
+        <span data-i18n="hero.scroll">Scroll</span>
+    </div>
+</section>
+
+
+<!-- ═══ STORY ═══ -->
+<section class="story" id="story">
+    <div class="section-inner">
+        <div class="story-grid">
+            <div class="story-text reveal">
+                <span class="section-label" data-i18n="story.label">Our Story</span>
+                <h2 data-i18n-html="story.heading">A home<br><em>in the trees</em></h2>
+                <p data-i18n="story.p1">Nestled within the ancient Lipovica forest on the peaceful outskirts of Belgrade, ForestAura is more than a place to stay — it is an invitation to slow down, breathe deeply, and reconnect with what matters.</p>
+                <p data-i18n="story.p2">Surrounded by tall linden trees and the quiet rhythm of the forest, this thoughtfully crafted retreat offers warmth, privacy, and a stillness that is rare to find so close to the city.</p>
+                <p data-i18n="story.p3">Whether you come to rest, to explore the forest trails, or simply to sit on the terrace with a morning coffee — ForestAura welcomes you home.</p>
+            </div>
+            <div class="story-image-wrap reveal">
+                <!--
+                    Replace with your photo:
+                    <img src="story-photo.jpg" alt="ForestAura" class="story-image">
+                -->
+                <div class="story-image"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ FEATURES / AMENITIES ═══ -->
+<section class="features" id="amenities">
+    <div class="section-inner">
+        <div class="features-header reveal">
+            <span class="section-label" style="color:rgba(240,234,216,0.38)" data-i18n="amenities.label">What Awaits You</span>
+            <h2 data-i18n-html="amenities.heading">Crafted for<br><em>the senses</em></h2>
+            <p data-i18n="amenities.subtext">Every detail at ForestAura has been thoughtfully prepared for your comfort and enjoyment.</p>
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card reveal">
+                <!-- Spa / droplet icon -->
+                <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 7C24 7 11 17.5 11 27.5C11 34.956 16.82 41 24 41C31.18 41 37 34.956 37 27.5C37 17.5 24 7 24 7Z" stroke="rgba(240,234,216,0.65)" stroke-width="1.3" stroke-linejoin="round"/>
+                    <path d="M17 30C17 30 19.5 35 24 35C28.5 35 31 30 31 30" stroke="rgba(240,234,216,0.45)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M20 22C20 22 21.5 25 24 25C26.5 25 28 22 28 22" stroke="rgba(240,234,216,0.3)" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <h3 data-i18n="spa.title">Spa Center</h3>
+                <p data-i18n="spa.desc">Unwind in our spa center — a private sanctuary of warmth and stillness designed to restore both body and mind after a day in the forest.</p>
+            </div>
+
+            <div class="feature-card reveal">
+                <!-- Pool / waves icon -->
+                <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="14" width="32" height="20" rx="1" stroke="rgba(240,234,216,0.65)" stroke-width="1.3"/>
+                    <path d="M8 34C8 34 12 38 16 38C20 38 20 34 24 34C28 34 28 38 32 38C36 38 40 34 40 34" stroke="rgba(240,234,216,0.65)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M14 14V10" stroke="rgba(240,234,216,0.45)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M34 14V10" stroke="rgba(240,234,216,0.45)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M16 24C16 24 19 21 24 21C29 21 32 24 32 24" stroke="rgba(240,234,216,0.4)" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <h3 data-i18n="pool.title">Pool</h3>
+                <p data-i18n="pool.desc">Take a refreshing dip or simply float while the sounds of the forest surround you. Our pool is your private retreat under the open sky.</p>
+            </div>
+
+            <div class="feature-card reveal">
+                <!-- Tree / nature icon -->
+                <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 41V23" stroke="rgba(240,234,216,0.65)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M24 23C24 23 13 19 13 11C13 11 17.5 13.5 24 15C30.5 13.5 35 11 35 11C35 19 24 23 24 23Z" stroke="rgba(240,234,216,0.65)" stroke-width="1.3" stroke-linejoin="round"/>
+                    <path d="M24 31C24 31 15 27 15 20" stroke="rgba(240,234,216,0.4)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M24 31C24 31 33 27 33 20" stroke="rgba(240,234,216,0.4)" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <h3 data-i18n="forest.title">Forest Setting</h3>
+                <p data-i18n="forest.desc">Wake to birdsong and the scent of linden. The ancient Lipovica forest is yours to wander — trails, clearings, and pure forest air just outside your door.</p>
+            </div>
+
+            <div class="feature-card reveal">
+                <!-- Kids icon -->
+                <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="13" r="5.5" stroke="rgba(240,234,216,0.65)" stroke-width="1.3"/>
+                    <path d="M15 41L18.5 28L24 33L29.5 28L33 41" stroke="rgba(240,234,216,0.65)" stroke-width="1.3" stroke-linejoin="round"/>
+                    <path d="M9 41H39" stroke="rgba(240,234,216,0.4)" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M13 22C13 22 17 26 24 26C31 26 35 22 35 22" stroke="rgba(240,234,216,0.4)" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <h3 data-i18n="kids.title">Kids Playground</h3>
+                <p data-i18n="kids.desc">A safe, magical space for little ones to play freely and explore their imagination in the fresh forest air, while you unwind nearby.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ GALLERY ═══ -->
+<section class="gallery" id="gallery">
+    <div class="section-inner">
+        <div class="gallery-header reveal">
+            <span class="section-label" data-i18n="gallery.label">Gallery</span>
+            <h2 data-i18n-html="gallery.heading">Life at<br><em>ForestAura</em></h2>
+        </div>
+
+        <!--
+            TO ADD YOUR PHOTOS:
+            Replace <div class="gallery-thumb"> with:
+            <img src="photo.jpg" alt="description" class="gallery-thumb">
+            The lightbox activates automatically with real images.
+        -->
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+            <div class="gallery-item reveal">
+                <div class="gallery-thumb"></div>
+                <div class="gallery-overlay"><span class="gallery-plus">+</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ QUOTE ═══ -->
+<section class="quote-section">
+    <div class="section-inner">
+        <blockquote class="reveal" data-i18n-html="quote.text">"The forest is not an escape from life —<br>it is a return to it."</blockquote>
+        <cite class="reveal">ForestAura · Lipovica</cite>
+    </div>
+</section>
+
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section class="experience" id="experience">
+    <div class="section-inner">
+        <div class="experience-grid">
+
+            <div class="reveal" style="position:relative">
+                <!--
+                    Replace with your interior/spa photo:
+                    <img src="spa-photo.jpg" alt="ForestAura spa" class="experience-image">
+                -->
+                <div class="experience-image"></div>
+            </div>
+
+            <div class="experience-text reveal">
+                <span class="section-label" data-i18n="exp.label">The Experience</span>
+                <h2 data-i18n-html="exp.heading">Everything<br><em>you need</em></h2>
+                <p data-i18n="exp.p1">ForestAura has been designed to offer a complete retreat experience. From the moment you arrive, everything is ready for your comfort and quiet enjoyment.</p>
+
+                <ul class="experience-list">
+                    <li data-i18n="exp.li1">Spa center with sauna &amp; relaxation area</li>
+                    <li data-i18n="exp.li2">Private outdoor pool</li>
+                    <li data-i18n="exp.li3">Fully equipped modern kitchen</li>
+                    <li data-i18n="exp.li4">Spacious terrace overlooking the forest</li>
+                    <li data-i18n="exp.li5">Children's playground &amp; outdoor lawn</li>
+                    <li data-i18n="exp.li6">Direct access to Lipovica forest trails</li>
+                    <li data-i18n="exp.li7">Peaceful, private — only minutes from Belgrade</li>
+                    <li data-i18n="exp.li8">Ideal for families, couples &amp; small groups</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact" id="contact">
+    <div class="section-inner">
+        <span class="section-label" data-i18n="contact.label">Reserve Your Stay</span>
+        <h2 class="reveal" data-i18n-html="contact.heading">Come,<br><em>find your peace.</em></h2>
+        <p class="reveal" data-i18n="contact.p">We would love to welcome you to ForestAura. Get in touch to check availability and plan your visit.</p>
+        <a class="contact-phone reveal" href="tel:+381604466987">+381 60 446 6987</a>
+        <div class="contact-btns reveal">
+            <a href="mailto:hello@forestaura.rs" class="btn-primary" data-i18n="contact.btn1">Send an Enquiry</a>
+            <a href="https://www.instagram.com/forest.aura.bg/" target="_blank" rel="noopener" class="btn-ghost" data-i18n="contact.btn2">Follow on Instagram</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+    <img src="forest-aura-logo.jpg" alt="ForestAura" class="footer-logo">
+    <span class="footer-copy" data-i18n="footer.copy">© 2025 ForestAura &nbsp;·&nbsp; Milorada Miškovića 7, Barajevo</span>
+    <a href="https://www.instagram.com/forest.aura.bg/" target="_blank" rel="noopener" class="footer-ig">@forest.aura.bg</a>
+</footer>
+
+
+<!-- ═══ LIGHTBOX ═══ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+<script src="main.js"></script>
+
+
+</body>
+</html>
