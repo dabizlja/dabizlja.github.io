@@ -691,6 +691,27 @@ footer {
     font-weight: 200;
 }
 .lightbox-close:hover { color: var(--cream); }
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(240,234,216,0.5);
+    font-size: 36px;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 16px 24px;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    user-select: none;
+}
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
+.lightbox-prev:hover,
+.lightbox-next:hover { color: var(--cream); }
 
 /* ── LANGUAGE TRANSITION ── */
 [data-i18n], [data-i18n-html] { transition: opacity 0.2s ease; }
