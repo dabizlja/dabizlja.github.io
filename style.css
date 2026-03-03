@@ -220,7 +220,7 @@ nav.scrolled .nav-cta:hover { background: var(--forest); color: var(--cream); bo
 .hero-logo {
     width: 170px;
     border-radius: 100px;
-    margin-bottom: 36px;
+    margin-bottom: -30px;
     animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     opacity: 0;
 }
