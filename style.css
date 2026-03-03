@@ -51,6 +51,7 @@ nav.scrolled {
 .nav-logo {
     height: 38px;
     border-radius: 100px;
+    transition: opacity 0.3s;
 }
 
 .nav-links {

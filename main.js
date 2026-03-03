@@ -170,10 +170,13 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 const nav = document.getElementById('nav');
 const storySection = document.getElementById('story');
 
+const navLogo = document.getElementById('navLogo');
+
 function updateNavScrolledState() {
     if (!nav || !storySection) return;
-    const triggerY = storySection.offsetTop - nav.offsetHeight - 8;
-    nav.classList.toggle('scrolled', window.scrollY >= triggerY);
+    const scrolled = window.scrollY >= storySection.offsetTop - nav.offsetHeight - 8;
+    nav.classList.toggle('scrolled', scrolled);
+    if (navLogo) navLogo.src = scrolled ? 'forest-aura-logo-dark.png' : 'forest-aura-logo-transparent.png';
 }
 
 window.addEventListener('scroll', updateNavScrolledState, { passive: true });
